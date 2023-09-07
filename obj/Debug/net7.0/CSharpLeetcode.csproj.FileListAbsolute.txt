@@ -1,0 +1,14 @@
+D:\CSharpLeetcode\bin\Debug\net7.0\CSharpLeetcode.exe
+D:\CSharpLeetcode\bin\Debug\net7.0\CSharpLeetcode.deps.json
+D:\CSharpLeetcode\bin\Debug\net7.0\CSharpLeetcode.runtimeconfig.json
+D:\CSharpLeetcode\bin\Debug\net7.0\CSharpLeetcode.dll
+D:\CSharpLeetcode\bin\Debug\net7.0\CSharpLeetcode.pdb
+D:\CSharpLeetcode\obj\Debug\net7.0\CSharpLeetcode.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharpLeetcode\obj\Debug\net7.0\CSharpLeetcode.AssemblyInfoInputs.cache
+D:\CSharpLeetcode\obj\Debug\net7.0\CSharpLeetcode.AssemblyInfo.cs
+D:\CSharpLeetcode\obj\Debug\net7.0\CSharpLeetcode.csproj.CoreCompileInputs.cache
+D:\CSharpLeetcode\obj\Debug\net7.0\CSharpLeetcode.dll
+D:\CSharpLeetcode\obj\Debug\net7.0\refint\CSharpLeetcode.dll
+D:\CSharpLeetcode\obj\Debug\net7.0\CSharpLeetcode.pdb
+D:\CSharpLeetcode\obj\Debug\net7.0\CSharpLeetcode.genruntimeconfig.cache
+D:\CSharpLeetcode\obj\Debug\net7.0\ref\CSharpLeetcode.dll
