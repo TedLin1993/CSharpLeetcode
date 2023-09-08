@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CSharpLeetcode\\CSharpLeetcode.csproj",
+      "projectUniqueName": "d:\\CSharpLeetcode\\CSharpLeetcode.csproj",
       "projectName": "CSharpLeetcode",
-      "projectPath": "D:\\CSharpLeetcode\\CSharpLeetcode.csproj",
+      "projectPath": "d:\\CSharpLeetcode\\CSharpLeetcode.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\CSharpLeetcode\\obj\\",
+      "outputPath": "d:\\CSharpLeetcode\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
