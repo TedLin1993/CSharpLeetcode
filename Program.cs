@@ -1,4 +1,4 @@
 ﻿using CSharpLeetcode.leetcode;
 
-var solution = new Solution();
-solution.TestMinimumEffortPath();
+var solution = new Accounts_Merge();
+solution.Test();
