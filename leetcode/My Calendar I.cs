@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace CSharpLeetcode.leetcode
 {
     public class MyCalendar
@@ -10,6 +12,7 @@ namespace CSharpLeetcode.leetcode
 
         public bool Book(int start, int end)
         {
+            var a = int.MaxValue;
             if (calendar.Count == 0)
             {
                 calendar.Add((start, end));
