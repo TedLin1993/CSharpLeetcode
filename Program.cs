@@ -1,4 +1,4 @@
 ﻿using CSharpLeetcode.leetcode;
 
-var solution = new Accounts_Merge();
+var solution = new String_to_Integer();
 solution.Test();
