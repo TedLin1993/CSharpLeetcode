@@ -1,4 +1,4 @@
 ﻿using CSharpLeetcode.leetcode;
 
-var solution = new Find_All_Anagrams_in_a_String();
+var solution = new Minimum_Height_Trees();
 solution.Test();
