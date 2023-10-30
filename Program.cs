@@ -1,4 +1,4 @@
 ﻿using CSharpLeetcode.leetcode;
 
-var solution = new Minimum_Height_Trees();
+var solution = new Minimum_Increment_Operations_to_Make_Array_Beautiful();
 solution.Test();
