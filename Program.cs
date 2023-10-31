@@ -1,4 +1,4 @@
 ﻿using CSharpLeetcode.leetcode;
 
-var solution = new Minimum_Increment_Operations_to_Make_Array_Beautiful();
+var solution = new Maximum_Points_After_Collecting_Coins_From_All_Nodes();
 solution.Test();
