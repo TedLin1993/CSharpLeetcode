@@ -1,3 +1,3 @@
 ﻿using CSharpLeetcode.leetcode;
-var solution = new Maximum_Points_After_Collecting_Coins_From_All_Nodes();
+var solution = new Maximum_Balanced_Subsequence_Sum();
 solution.Test();
