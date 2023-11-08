@@ -1,3 +1,3 @@
 ﻿using CSharpLeetcode.leetcode;
-var solution = new Maximum_Balanced_Subsequence_Sum();
+var solution = new RangeSumQuert();
 solution.Test();
