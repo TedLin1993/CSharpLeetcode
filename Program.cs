@@ -1,3 +1,3 @@
 ﻿using CSharpLeetcode.leetcode;
-var solution = new RangeSumQuert();
+var solution = new Next_Permutation();
 solution.Test();
