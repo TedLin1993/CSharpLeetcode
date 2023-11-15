@@ -21,10 +21,6 @@ public class Find_Champion_II
     }
     public void Test()
     {
-        FindChampion(4, new int[][]{
-            new int[] {0,2},
-            new int[] {1,3},
-            new int[] {1,2},
-        });
+        FindChampion(4, [[0, 2], [1, 3], [1, 2]]);
     }
 }
