@@ -46,13 +46,13 @@ namespace CSharpLeetcode.leetcode
         }
         public void Test()
         {
-            var test = new List<IList<string>>
-            {
-                new List<string> { "John", "johnsmith@mail.com", "john_newyork@mail.com" },
-                new List<string> { "John", "johnsmith@mail.com", "john00@mail.com" },
-                new List<string> { "Mary", "mary@mail.com" },
-                new List<string> { "John", "johnnybravo@mail.com" }
-            };
+            List<IList<string>> test =
+            [
+                ["John", "johnsmith@mail.com", "john_newyork@mail.com"],
+                ["John", "johnsmith@mail.com", "john00@mail.com"],
+                ["Mary", "mary@mail.com"],
+                ["John", "johnnybravo@mail.com"]
+            ];
             Console.WriteLine(AccountsMerge(test));
         }
     }
