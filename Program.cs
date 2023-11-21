@@ -1,3 +1,3 @@
 ﻿using CSharpLeetcode.leetcode;
-var solution = new Maximum_Strong_Pair_XOR_II();
+var solution = new Maximum_Xor_Product();
 solution.Test();
