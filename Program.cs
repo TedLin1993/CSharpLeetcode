@@ -1,4 +1,4 @@
 ﻿using CSharpLeetcode.leetcode;
-var solution = new Longest_Increasing_Subsequence();
+var solution = new MinimumNumberofCoinstobeAdded();
 solution.Test();
 
