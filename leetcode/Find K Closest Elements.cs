@@ -4,20 +4,20 @@ public class Find_K_Closest_Elements
 {
     public IList<int> FindClosestElements(int[] arr, int k, int x)
     {
-        if (x < arr[0]) return arr[..k].ToList();
         var left = 0;
-        var right = k;
-        while (right < arr.Length && arr[right] < x)
+        var right = arr.Length - k;
+        while (left < right)
         {
-            right++;
-            left++;
+            var mid = left + (right - left) / 2;
+            if (x - arr[mid] > arr[mid + k] - x)
+            {
+                left = mid + 1;
+            }
+            else
+            {
+                right = mid;
+            }
         }
-        while (right < arr.Length)
-        {
-            if (arr[right] - x >= x - arr[left]) break;
-            right++;
-            left++;
-        }
-        return arr[left..right].ToList();
+        return arr[left..(left + k)].ToList();
     }
 }
