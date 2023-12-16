@@ -1,4 +1,4 @@
 ﻿using CSharpLeetcode.leetcode;
-var solution = new Minimum_Number_of_Coins_to_be_Added();
+var solution = new Jump_Game();
 solution.Test();
 
