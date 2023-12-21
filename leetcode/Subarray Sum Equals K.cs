@@ -13,16 +13,12 @@ public class _560
             if (preSumDict.ContainsKey(cur - k))
             {
                 res += preSumDict[cur - k];
-
             }
             if (!preSumDict.ContainsKey(cur))
             {
-                preSumDict[cur] = 1;
+                preSumDict[cur] = 0;
             }
-            else
-            {
-                preSumDict[cur]++;
-            }
+            preSumDict[cur]++;
         }
         return res;
     }
