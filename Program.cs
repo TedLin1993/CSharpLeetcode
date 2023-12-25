@@ -1,4 +1,4 @@
 ﻿using CSharpLeetcode.leetcode;
-// var solution = new Jump_Game();
-// solution.Test();
-_528.Test();
+var solution = new _221();
+solution.Test();
+
