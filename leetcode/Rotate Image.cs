@@ -1,6 +1,6 @@
 namespace CSharpLeetcode.leetcode;
 
-public class Solution
+public class _48
 {
     public void Rotate(int[][] m)
     {
