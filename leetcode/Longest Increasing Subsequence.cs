@@ -37,6 +37,23 @@ public class Longest_Increasing_Subsequence
         }
         return left;
     }
+    public int LengthOfLIS_2(int[] nums)
+    {
+        var seq = new List<int> { nums[0] };
+        foreach (var v in nums[1..])
+        {
+            if (v > seq.Last())
+            {
+                seq.Add(v);
+            }
+            else
+            {
+                var idx = seq.BinarySearch(v);
+                if (idx < 0) seq[~idx] = v;
+            }
+        }
+        return seq.Count;
+    }
     public void Test()
     {
         var test = LengthOfLIS([10, 9, 2, 5, 3, 4]);
