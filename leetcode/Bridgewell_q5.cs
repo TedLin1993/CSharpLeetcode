@@ -45,32 +45,38 @@ class q5
     {
         var first = GetArticles(0);
         var totalPage = first.total_pages;
-        var minHeap = new PriorityQueue<string, Data>((IEnumerable<(string Priority, Data Element)>)Comparer<(Data data, string title)>.Create((x, y) =>
+        var maxHeap = new PriorityQueue<string, (string, Data)>(Comparer<(string title, Data data)>.Create((x, y) =>
         {
-            return (int)(x.data.num_comments - y.data.num_comments);
-        }), (IComparer<Data>?)StringComparer.Ordinal);
+            if (x.data.num_comments != y.data.num_comments)
+                return (int)(y.data.num_comments - x.data.num_comments);
+            return string.Compare(y.title, x.title);
+        }));
         for (var i = 0; i < totalPage; i++)
         {
             var article = GetArticles(i);
             for (int j = 0; j < article.data.Count; j++)
             {
-                if (article.data[j].title == null || article.data[j].story_title == null) continue;
+                if (article.data[j].title == null && article.data[j].story_title == null) continue;
                 var title = "";
                 if (article.data[j].title != null) title = article.data[j].title;
                 else title = article.data[j].story_title;
                 if (article.data[j].num_comments == null) article.data[j].num_comments = 0;
-                minHeap.Enqueue(title, article.data[j]);
+                maxHeap.Enqueue(title, (title, article.data[j]));
+                if (maxHeap.Count > limit)
+                {
+                    maxHeap.Dequeue();
+                }
             }
         }
         var res = new List<string>();
-        for (int i = 0; i < limit; i++)
+        for (int i = 0; i < limit && maxHeap.Count > 0; i++)
         {
-            res.Add(minHeap.Dequeue());
+            res.Add(maxHeap.Dequeue());
         }
         return res;
     }
     public void Test()
     {
-        topArticles(5);
+        topArticles(50);
     }
 }
