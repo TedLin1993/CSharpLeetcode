@@ -1,4 +1,4 @@
 ﻿using CSharpLeetcode.leetcode;
-var solution = new q7();
+var solution = new _3043();
 solution.Test();
 
