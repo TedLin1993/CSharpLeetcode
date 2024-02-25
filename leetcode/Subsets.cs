@@ -4,8 +4,10 @@ namespace CSharpLeetcode.leetcode
     {
         public IList<IList<int>> Subsets(int[] nums)
         {
-            var res = new List<IList<int>>();
-            res.Add(new List<int>());
+            var res = new List<IList<int>>
+            {
+                new List<int>()
+            };
             var cur = new List<int>();
             void dfs(int idx)
             {

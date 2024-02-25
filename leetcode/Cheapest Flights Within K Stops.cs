@@ -6,7 +6,7 @@ public class _787
     public int FindCheapestPrice(int n, int[][] flights, int src, int dst, int k)
     {
         Dictionary<int, List<flightPrice>> graph = [];
-        for (int i = 0; i < n; i++) graph[i] = new List<flightPrice>();
+        for (int i = 0; i < n; i++) graph[i] = [];
         foreach (var f in flights)
         {
             graph[f[0]].Add(new flightPrice(f[1], f[2]));
