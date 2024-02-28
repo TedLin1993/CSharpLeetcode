@@ -2,3 +2,5 @@ bin/
 .vscode/
 .vs/
 obj/
+leetcode/Bridgewell2_q2.cs
+leetcode/Bridgewell2_q5.cs
