@@ -1,5 +1,3 @@
-using System.Globalization;
-
 namespace CSharpLeetcode.leetcode;
 
 public class _2192
