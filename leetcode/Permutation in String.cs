@@ -13,23 +13,14 @@ public class _567
             s1Arr[s1[i] - 'a']++;
             s2Arr[s2[i] - 'a']++;
         }
-        if (IsEqual(s1Arr, s2Arr)) return true;
+        if (s1Arr.SequenceEqual(s2Arr)) return true;
 
         for (int i = len; i < s2.Length; i++)
         {
             s2Arr[s2[i - len] - 'a']--;
             s2Arr[s2[i] - 'a']++;
-            if (IsEqual(s1Arr, s2Arr)) return true;
+            if (s1Arr.SequenceEqual(s2Arr)) return true;
         }
         return false;
-    }
-    bool IsEqual(int[] a, int[] b)
-    {
-        if (a.Length != b.Length) return false;
-        for (int i = 0; i < a.Length; i++)
-        {
-            if (a[i] != b[i]) return false;
-        }
-        return true;
     }
 }
