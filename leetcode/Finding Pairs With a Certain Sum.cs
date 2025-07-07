@@ -2,34 +2,38 @@ namespace CSharpLeetcode.leetcode;
 
 public class FindSumPairs
 {
-    int[] Nums1;
     int[] Nums2;
-    Dictionary<int, int> Dict;
+    Dictionary<int, int> Dict1;
+    Dictionary<int, int> Dict2;
 
     public FindSumPairs(int[] nums1, int[] nums2)
     {
-        Nums1 = nums1;
         Nums2 = nums2;
-        Dict = [];
+        Dict1 = [];
+        Dict2 = [];
+        foreach (var v in nums1)
+        {
+            Dict1[v] = Dict1.GetValueOrDefault(v) + 1;
+        }
         foreach (var v in nums2)
         {
-            Dict[v] = Dict.GetValueOrDefault(v) + 1;
+            Dict2[v] = Dict2.GetValueOrDefault(v) + 1;
         }
     }
 
     public void Add(int index, int val)
     {
-        Dict[Nums2[index]]--;
+        Dict2[Nums2[index]]--;
         Nums2[index] += val;
-        Dict[Nums2[index]] = Dict.GetValueOrDefault(Nums2[index]) + 1;
+        Dict2[Nums2[index]] = Dict2.GetValueOrDefault(Nums2[index]) + 1;
     }
 
     public int Count(int tot)
     {
         var res = 0;
-        foreach (var v in Nums1)
+        foreach (var kvp in Dict1)
         {
-            res += Dict.GetValueOrDefault(tot - v);
+            res += kvp.Value * Dict2.GetValueOrDefault(tot - kvp.Key);
         }
         return res;
     }
