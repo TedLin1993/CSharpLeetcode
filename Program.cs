@@ -1,6 +1,6 @@
 ﻿using System.Text;
 using CSharpLeetcode.leetcode;
 
-var solution = new _498();
+var solution = new Q2();
 solution.Test();
 
